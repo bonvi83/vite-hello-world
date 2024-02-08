@@ -1,4 +1,7 @@
 <script>
+
+import AppTitle from "./components/AppTitle.vue"
+
 export default {
   data() {
     return {
@@ -6,23 +9,20 @@ export default {
     }
   },
 
-  methods: {
-
-  },
-
-  computed: {
-
+  components: {
+    AppTitle,
   }
-}
+};
 </script>
 
 
 <template>
-  <h1 class="red">{{ title }}</h1>
+  <h2 class="red">{{ title }}</h2>
+  <AppTitle></AppTitle>
+
 </template>
 
 
 <style>
-  @import url(`./style.css`);
-
+  @import "./style.css";
 </style>
